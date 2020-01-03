@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    --color-primary: #68D89B;
+    --color-danger: #E80B0B;
+    --color-warning: #F2E80B;
+    --color-secondary: #878787;
+    --color-dark: #343A40;
+    --color-gray: #E0E0E0;
+    --color-lightgray: #F7F7F7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.text-extralg {
+    font-size: 56px;
+}
+
+.text-lg {
+    font-size: 36px;
+}
+
+.text-extramed {
+    font-size: 27px;
+}
+
+.text-med {
+    font-size: 24px;
+}
+
+.text-sm {
+    font-size: 18px;
+}
+
+.text-extrasm {
+    font-size: 14px;
+}
+
+.sp-8 {
+    height: 8px;
+}
+
+.sp-12 {
+    height: 12px;
+}
+
+.sp-16 {
+    height: 16px;
+}
+
+.sp-24 {
+    height: 24px;
+}
+
+.sp-32 {
+    height: 32px;
+}
+
+.full-page {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+nav b {
+    color: var(--color-primary)
+}
+
+nav ul {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: var(--color-secondary);
+    padding: 10px;
+}
+
+.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome-img {
+    width: 45%;
+    height: auto;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 30px;
+}
+
+.welcome-container b {
+    color: var(--color-primary)
+}
+
+.welcome-description {
+    color: var(--color-secondary)
+}
+
+.welcome-button-grid {
+    width: 100% !important;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+}
+
+.welcome-container button {
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.btn-login-signup {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-fb {
+    background-color: #4267B2;
+    color: white;
+}
+
+.btn-google {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    color: var(--color-secondary);
+}
+
+form p {
+    margin: 8px 0;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.login-form-container {
+    width: 50%;
+}
+
+.login-form-container form {
+    margin: 100px;
+}
+
+.login-section input {
+    width: 100%;
+}
+
+.login-description {
+    background-color: var(--color-primary);
+    width: 50%;
+    height: 100%;
+}
+
+.form-btn {
+    padding: 12px 40px;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.profile-banner {
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-banner img {
+    width: 175px;
+    margin: 30px;
+}
+
+.home-section {
+    margin: 50px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-img {
+    width: 50%;
+    height: auto;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: var(--color-lightgray);
+}
+
+.search-bar button {
+    padding: 12px 15px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+
+.product {
+    height: 450px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.product-img {
+    height: 75%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-detail {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-detail button {
+    padding: 12px 25px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.products-grid {
+    width: 100% !important;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+}
+
+.search-section {
+    margin: 50px;
+}
+
+.progress-section {
+    margin: 50px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+.progress-img {
+    width: 20%;
+    height: auto;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.progress-detail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-button {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.progress-button button {
+    padding: 12px 0;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.chat-section {
+    margin: 50px;
+}
+
+.chat-img {
+    width: 20%;
+    height: auto;
+    margin: 30px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    margin: 30px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.chat-detail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-time-status {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.chat-status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.status-circle {
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 30px;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+}
